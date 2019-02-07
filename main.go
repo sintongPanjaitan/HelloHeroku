@@ -12,7 +12,7 @@ package main
  	fmt.Println("listening...")
  	err := http.ListenAndServe(GetPort(), nil)
 	if err != nil {
- 		log.Fatal("ListenAndServe: ", err
+ 		log.Fatal("ListenAndServe: ", err)
 	}
  }
  
@@ -29,5 +29,5 @@ package main
  		fmt.Println("INFO: No PORT environment variable detected, defaulting to " + port)
  	}
  	return ":" + port
-`}
+}
 
